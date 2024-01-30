@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <title>YOU</title>
+  </head>
+  <body>
+    <h1>PLEASE ENTER YOUR CORRECT DATA</h1>
+    ENTER YOUR NAME: <input type="text" name="" id="nameInput" /> <br />
+    <button id="submitButton" onclick="details()">CLICK</button>
+    <script>
+      function details() {
+        var NAME = document.getElementById("nameInput").value;
+        if (NAME.toLowerCase() == "rosema") {
+          alert("YOU ARE QUEEN");
+        } else {
+          alert("YOU HAVE GIVEN INCORRECT DATA");
+        }
+      }
+    </script>
+  </body>
+</html>
