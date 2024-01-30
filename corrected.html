@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title>USING IMAGE</title>
+  </head>
+  <body>
+    <h1>HOPE YOU'LL PROVIDE CORRECT INFORMATION</h1>
+    ENTER YOUR FULL NAME=<input type="text" name="" id="name" /><br />
+    ENTER YOUR CONTACT NUMBER= <input type="text" name="" id="num" /><br />
+    ENTER YOUR PERMANENT ADDRESS= <input type="text" name="" id="add" /><br />
+    <button id="click" onclick="you()">SUBMIT</button>
+    <script>
+      function you() {
+        var NAME = document.getElementById("name").value;
+        var NUMBER = Number(document.getElementById("num").value);
+        var ADD = document.getElementById("add").value;
+        var rosema_rijal = "rosema_rijal";
+        var phone_number = 9805164355;
+        var dhading = "dhading";
+        if (
+          NAME.toLowerCase() == rosema_rijal &&
+          NUMBER == phone_number &&
+          ADD.toLowerCase() == dhading
+        ) {
+          window.alert("ACCORDING TO YOUR DATA PROVIDED YOU'RE THE QUEEN😁🥰");
+        } else {
+          window.alert(
+            "YOUR DETAILS DOESN'T MATCH WITH YOU BUT, ROSEMA YOU'RE STILL THE QUEEN 🥰"
+          );
+        }
+      }
+    </script>
+  </body>
+</html>
