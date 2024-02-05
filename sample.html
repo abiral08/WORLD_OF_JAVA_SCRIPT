@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Webpage Title</title>
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-7Z1K45HT3sJXvgaOQ1wCRyoD3GvMZ4X+99V9YH6h0D53fO/6+0u6yuNdVePBmXgZz7b7XC9CEhNH5Wu7lFG03Q=="
+      crossorigin="anonymous"
+    /> -->
+    
+    <link rel="stylesheet" href="sample.css">
+    <script>
+      function you() {
+        var NAME = document.getElementById("name").value;
+        var NUMBER = Number(document.getElementById("num").value);
+        var ADD = document.getElementById("add").value;
+        var rosema_rijal = "rosema_rijal";
+        var phone_number = 9805164355;
+        var dhading = "dhading";
+        if (
+          NAME.toLowerCase() == rosema_rijal &&
+          NUMBER == phone_number &&
+          ADD.toLowerCase() == dhading
+        ) {
+          window.alert("ACCORDING TO YOUR DATA PROVIDED YOU'RE THE QUEEN😁🥰");
+        } else {
+          window.alert(
+            "YOUR DETAILS DOESN'T MATCH WITH YOU BUT, ROSEMA YOU'RE STILL THE QUEEN 🥰"
+          );
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <h1>Your Website Name</h1>
+    </header>
+
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Movies</a>
+      <a href="#">TV Series</a>
+      <a href="#">Most Popular</a>
+      <a href="#">Top Airing</a>
+    </nav>
+
+    <main>
+      <img src="ani_finder.png" alt="Medium Logo" id="logo" />
+
+      <div id="search-container">
+        <!-- <i class="fas fa-search" id="search-icon"> -->
+            <button id="click" onclick="you()"><a href="HOMEPAGE.HTML">HOME</a></button></i>
+        <input type="text" placeholder="Search" id="search-box" />
+      </div>
+
+      <img src="ani_finder.png" alt="Big Image" id="big-image" />
+    </main>
+  </body>
+</html>
