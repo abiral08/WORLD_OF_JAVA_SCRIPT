@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Greatest Number</title>
+  </head>
+  <body>
+    <h1>Enter your Data</h1>
+    <form>
+      Enter any first number(a)= <input type="text" name="" id="N1" /><br />
+      Enter any second number(b)= <input type="text" name="" id="N2" /><br />
+      Enter any third number(c)= <input type="text" name="" id="N3" />
+      <input type="button" value="Submit" onclick="findGreatest()" />
+    </form>
+    <script>
+      function findGreatest() {
+        var a = Number(document.getElementById("N1").value);
+        var b = Number(document.getElementById("N2").value);
+        var c = Number(document.getElementById("N2").value);
+
+        if (a > b && a > c) {
+          window.alert("a is greater");
+        } else if (b > a && b > c) {
+          window.alert("b is greater");
+        } else if (c > a && c > b) {
+          window.alert("c is greater ");
+        } else {
+          window.alert("All are equal");
+        }
+      }
+    </script>
+  </body>
+</html>
